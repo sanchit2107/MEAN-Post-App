@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "mean-post-app"
+    }
+  },
+  "defaultProject": "mean-post-app",
+  "cli": {
+    "analytics": false
+  }
 }
