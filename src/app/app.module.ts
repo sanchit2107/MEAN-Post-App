@@ -12,7 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PostCreateComponent } from './posts/post-create/post-create.component'
 import { from } from 'rxjs';
-import { HeaderComponent } from './header/header/header.component';
+import { HeaderComponent } from './header/header.component';
 import { PostListComponent } from './posts/post-list/post-list.component';
 
 @NgModule({
