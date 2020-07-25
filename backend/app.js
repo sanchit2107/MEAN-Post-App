@@ -18,7 +18,7 @@ app.use('/api/posts', (req, res, next) => {
   ];
 
   res.status(200).json({
-    message: 'Posr fetches succesfully!!',
+    message: 'Post fetches succesfully!!',
     posts: posts
   });
 });
