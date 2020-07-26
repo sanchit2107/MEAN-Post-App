@@ -7,7 +7,7 @@ const Post = require('./models/post');
 const app = express();
 
 mongoose.set('useUnifiedTopology', true);
-mongoose.connect("mongodb+srv://sam1:6W9UHbmoSBHHC3UA@cluster0.6dcol.mongodb.net/test?retryWrites=true&w=majority",
+mongoose.connect("mongodb+srv://sam1:6W9UHbmoSBHHC3UA@cluster0.6dcol.mongodb.net/post-app?retryWrites=true&w=majority",
   { useNewUrlParser: true })
   .then(() => {
     console.log('Connected to Database!!');
@@ -31,7 +31,7 @@ app.post('/api/posts', (req, res, next) => {
     title: req.body.title,
     content: req.body.content
   });
-  console.log(post);
+  post.save();
   res.status(201).json({
     message: 'Post added sucess!!'
   });
