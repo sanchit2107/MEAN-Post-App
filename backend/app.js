@@ -1,9 +1,19 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
 
 const Post = require('./models/post');
+const { mongo } = require('mongoose');
 
 const app = express();
+mongoose.set('useUnifiedTopology', true);
+mongoose.connect("mongodb+srv://sam1:HNC1JWEPafWOtjw8@cluster0.6dcol.mongodb.net/test?retryWrites=true&w=majority", { useNewUrlParser: true })
+  .then(() => {
+    console.log('Connected to Database!!');
+  })
+  .catch(() => {
+    console.log('Connection failed!!');
+  });
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
