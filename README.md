@@ -1,3 +1,5 @@
+<img src="https://camo.githubusercontent.com/4dc5b8f59be38f801e3b00810b9fa89ddc22c9d8/68747470733a2f2f696d6167652e6962622e636f2f6874714f5a4a2f73656e696f725f66726f6e745f656e645f646576656c6f7065725f6f70656e696e67735f312e676966" align="right" width="200">
+
 # MeanPostApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.0.
